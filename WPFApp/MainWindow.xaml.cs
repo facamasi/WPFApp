@@ -60,7 +60,7 @@ public partial class MainWindow : Window
 
         Task T6 = new Task((message) =>
         MessageBox.Show(message.ToString()), "Expresion Lambda con parámentros");
-
+        
         Task T7 = new Task(() => AddMessage("Ejecutando la tarea"));
         T7.Start();
         AddMessage("En el hilo principal");
